@@ -1,0 +1,26 @@
+<RCC>
+  <qresource prefix="MyQT">
+    <file>Resources/4.png</file>
+    <file>Resources/road.png</file>
+    <file>Resources/Login.png</file>
+    <file>Resources/shadeslice.png</file>
+    <file>Resources/2.png</file>
+    <file>Resources/缩小.png</file>
+    <file>Resources/1.png</file>
+    <file>Resources/放大.png</file>
+    <file>Resources/消影.png</file>
+    <file>Resources/3.png</file>
+    <file>Resources/底视图.png</file>
+    <file>Resources/6.png</file>
+    <file>Resources/俯视图.png</file>
+    <file>Resources/右视图.png</file>
+    <file>Resources/左视图.png</file>
+    <file>Resources/后视图.png</file>
+    <file>Resources/主视图.png</file>
+    <file>Resources/welcome.png</file>
+    <file>Resources/Slice2.png</file>
+    <file>Resources/openFile.png</file>
+    <file>Resources/shademodel.png</file>
+    <file>Resources/road.png</file>
+  </qresource>
+</RCC>

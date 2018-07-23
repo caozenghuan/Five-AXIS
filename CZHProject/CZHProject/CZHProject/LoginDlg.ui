@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginDlg</class>
+ <widget class="QDialog" name="LoginDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>815</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LoginDlg</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/Resources/图标/Icon.png</normaloff>:/Resources/图标/Icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(Resources/Login.png);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">border-image: url(Resources/Login.png);</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Dlg.qrc"/>
+ </resources>
+ <connections/>
+</ui>

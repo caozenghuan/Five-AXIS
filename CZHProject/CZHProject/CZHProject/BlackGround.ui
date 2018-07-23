@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BlackGround</class>
+ <widget class="QDialog" name="BlackGround">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>179</width>
+    <height>212</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>15</y>
+     <width>131</width>
+     <height>176</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>背景设置</string>
+   </property>
+   <widget class="QRadioButton" name="radioGray">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>55</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>灰色渐变</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioBlueDeep">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>85</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>深蓝渐变</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioBlueLight">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>25</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>浅蓝渐变</string>
+    </property>
+   </widget>
+   <widget class="QDialogButtonBox" name="buttonBox">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>130</y>
+      <width>126</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="standardButtons">
+     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioWhite">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>110</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>纯白色</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>BlackGround</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>BlackGround</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioBlueLight</sender>
+   <signal>clicked()</signal>
+   <receiver>BlackGround</receiver>
+   <slot>Bluelight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>89</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioBlueDeep</sender>
+   <signal>clicked()</signal>
+   <receiver>BlackGround</receiver>
+   <slot>Bluedark()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>89</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioGray</sender>
+   <signal>clicked()</signal>
+   <receiver>BlackGround</receiver>
+   <slot>Grepshade()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>89</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioWhite</sender>
+   <signal>clicked()</signal>
+   <receiver>BlackGround</receiver>
+   <slot>WhiteBlack()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>89</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Bluelight()</slot>
+  <slot>Grepshade()</slot>
+  <slot>Bluedark()</slot>
+  <slot>WhiteBlack()</slot>
+ </slots>
+</ui>
